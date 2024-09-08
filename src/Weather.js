@@ -38,9 +38,7 @@ export default function Weather() {
                     <small>Humidity: {weather.main.humidity}%, </small>
                     <small>Wind: {Math.round(weather.wind.speed)} kph</small>
                     <p>{weather.weather[0].description}</p>
-                    <div>
-                        <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="No_Image" />
-                    </div>
+                    <img className='image' src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="No_Image" />
                 </div>
             </>)}
         </div>
